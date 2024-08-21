@@ -16,7 +16,7 @@ namespace TechExam.Controllers
         }
 
         [HttpPost("addNewBook")]
-        public async Task<IActionResult> addNewBookAsync([FromBody] AddNewBook myNewBook)
+        public async Task<IActionResult> addNewBookAsync([FromBody] Book myNewBook)
         {
             if(myNewBook == null)
             {
@@ -52,6 +52,5 @@ namespace TechExam.Controllers
 
             return Ok(new { allBooks = output });
         }
-
     }
 }

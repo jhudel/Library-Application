@@ -6,7 +6,6 @@ using TechExam.Data;
 using TechExam.Models;
 using BCrypt.Net;
 using TechExam.Interfaces;
-using TechExam.Models;
 
 namespace TechExam.Services
 {
@@ -19,14 +18,9 @@ namespace TechExam.Services
             _db = db;
         }
 
-        public async Task AddNewBook(AddNewBook myNewBook)
+        public async Task<object> AddNewBook(Book myNewBook)
         {
-            if(myNewBook == null)
-            {
-                return;
-            }
-
-            var myData = new AddNewBook()
+            var myData = new Book()
             {
                 Title = myNewBook.Title,
                 Author = myNewBook.Author,
@@ -34,15 +28,17 @@ namespace TechExam.Services
                 publishedDate = myNewBook.publishedDate,
             };
 
-            _db.AddNewBook.Add(myData);
+            _db.Book.Add(myData);
             await _db.SaveChangesAsync();
+
+            return "Successfully added new book";
         }
 
         public async Task<object> UpdateUserBook(
             int id,
             UpdateBook updateMyBook)
         {
-            var find = await _db.AddNewBook.FirstOrDefaultAsync(item => item.Id == id);
+            var find = await _db.Book.FirstOrDefaultAsync(item => item.Id == id);
 
             if(find == null)
             {
@@ -59,14 +55,9 @@ namespace TechExam.Services
             return "Successfully updated";
         }
 
-        public async Task<AddNewBook> GetSpecificBook(int id)
+        public async Task<Book> GetSpecificBook(int id)
         {
-            if(id == null)
-            {
-                return null;
-            }
-
-            var findItem = await _db.AddNewBook.FirstOrDefaultAsync(item => item.Id == id);
+            var findItem = await _db.Book.FirstOrDefaultAsync(item => item.Id == id);
 
             if(findItem == null)
             {
@@ -76,9 +67,9 @@ namespace TechExam.Services
             return findItem;
         }
 
-        public async Task<List<AddNewBook>> GetAllBooks()
+        public async Task<List<Book>> GetAllBooks()
         {
-            var result = await _db.AddNewBook.ToListAsync();
+            var result = await _db.Book.ToListAsync();
             return result;
         }
     }

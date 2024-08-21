@@ -15,7 +15,6 @@ namespace TechExam
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     // Use only HTTP
-                    Console.WriteLine("First part?");
                     webBuilder.UseUrls("http://localhost:5113");
                     // OR
                     // Use only HTTPS

@@ -10,6 +10,6 @@ namespace TechExam.Data
         }
 
         public DbSet<Users> Users{ get; set; }
-        public DbSet<AddNewBook> AddNewBook { get; set; }
+        public DbSet<Book> Book { get; set; }
     }
 }

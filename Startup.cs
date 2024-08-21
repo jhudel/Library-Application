@@ -1,8 +1,3 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using TechExam.Data;
 using TechExam.Services;
 using Microsoft.EntityFrameworkCore;
@@ -41,14 +36,8 @@ namespace TechExam
                 options.JsonSerializerOptions.ReadCommentHandling = JsonCommentHandling.Skip;
             });
 
-            services.AddScoped<ITextService, TextService>();
-
-            // Add CORS services
             services.AddCors();
 
-            // Add custom services
-            //services.AddScoped<ITextEncoder, TextEncoder>();
-            services.AddScoped<SubDataInterface, ISubDataService>();
             services.AddScoped<LoginInterface, LoginService>();
             services.AddScoped<BookInterface, BookService>();
 
@@ -101,26 +90,11 @@ namespace TechExam
             {
                 endpoints.MapControllers();
 
-                // Add the custom route for the UpdateUserData action
-                //Overrides mapping of the .MapControllers() above
-                //endpoints.MapControllerRoute(
-                //    name: "updateUserData",
-                //    pattern: "api/text/updateUserData/{userName}",
-                //    defaults: new { controller = "text", action = "UpdateUserData" }
-                //);
-
-                //THE URL IN THE FRONT END WILL BE CHANGE AS WELL
                 endpoints.MapControllerRoute(
                     name: "updateBook",
                     pattern: "api/text/updateBook/{id}",
                     defaults: new { controller = "book", action = "updateBook" }
                 );
-
-                //endpoints.MapControllerRoute(
-                //name: "withdrawCurrentUserBalance",
-                //pattern: "api/text/withdrawCurrentUserBalance/{currentUser}",
-                //defaults: new { controller = "text", action = "withdrawCurrentUserBalance" }
-                //);
             });
         }
     }

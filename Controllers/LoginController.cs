@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using TechExam.Data;
 using TechExam.Models;
-using TechExam.Services;
 using TechExam.Interfaces;
 
 namespace TechExam.Controllers
@@ -22,7 +20,7 @@ namespace TechExam.Controllers
         {
             if (userData == null)
             {
-                return BadRequest("textData is null");
+                return BadRequest("data is null");
             }
 
             await _loginService.RegisterUser(userData);

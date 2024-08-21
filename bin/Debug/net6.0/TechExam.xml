@@ -28,5 +28,17 @@
         <member name="M:TechExam.Migrations.changeAddNewBookModel.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="T:TechExam.Migrations.changedbname">
+            <inheritdoc />
+        </member>
+        <member name="M:TechExam.Migrations.changedbname.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TechExam.Migrations.changedbname.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TechExam.Migrations.changedbname.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
     </members>
 </doc>

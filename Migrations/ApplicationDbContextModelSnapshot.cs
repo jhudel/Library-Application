@@ -22,7 +22,7 @@ namespace TechExam.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("TechExam.Models.AddNewBook", b =>
+            modelBuilder.Entity("TechExam.Models.Book", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -47,7 +47,7 @@ namespace TechExam.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("AddNewBook");
+                    b.ToTable("Book");
                 });
 
             modelBuilder.Entity("TechExam.Models.Users", b =>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ji6SMWr9p0TsdMVntOsy7XhNC0P12Zudb5hR+WwpffFE5qvn24BVyC2KyX6ZXPX00DB14m/tPV3Wd5uDqy3p5g==",
+  "dgSpecHash": "PDeCZRVRe8nWeoOM4wSGtXjD9AZewkaj9FJtQYXS8Vmfj8PtRLvLVadtmDsWc7cEst5422YDkK9J01w2ldcFRQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jhudel\\Downloads\\Exercise_1_template - Copy\\TechExam.csproj",
+  "projectFilePath": "C:\\Users\\jhudel\\Downloads\\Library-app - Copy\\Library-Application\\TechExam.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jhudel\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\jhudel\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
