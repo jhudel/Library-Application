@@ -1,11 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Migrations",
-    "\\TextEncodingApp",
-    "\\TextEncodingApp\\src",
-    "\\TextEncodingApp\\src\\app"
+    "\\Migrations"
   ],
-  "SelectedNode": "\\Models",
+  "SelectedNode": "\\TechExam.sln",
   "PreviewInSolutionExplorer": false
 }

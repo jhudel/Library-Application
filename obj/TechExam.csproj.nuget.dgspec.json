@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jhudel\\Downloads\\Library-app - Copy\\Library-Application\\TechExam.csproj": {}
+    "C:\\Users\\jhudel\\Downloads\\New folder (3)\\Library-Application\\TechExam.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jhudel\\Downloads\\Library-app - Copy\\Library-Application\\TechExam.csproj": {
+    "C:\\Users\\jhudel\\Downloads\\New folder (3)\\Library-Application\\TechExam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jhudel\\Downloads\\Library-app - Copy\\Library-Application\\TechExam.csproj",
+        "projectUniqueName": "C:\\Users\\jhudel\\Downloads\\New folder (3)\\Library-Application\\TechExam.csproj",
         "projectName": "TechExam",
-        "projectPath": "C:\\Users\\jhudel\\Downloads\\Library-app - Copy\\Library-Application\\TechExam.csproj",
+        "projectPath": "C:\\Users\\jhudel\\Downloads\\New folder (3)\\Library-Application\\TechExam.csproj",
         "packagesPath": "C:\\Users\\jhudel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jhudel\\Downloads\\Library-app - Copy\\Library-Application\\obj\\",
+        "outputPath": "C:\\Users\\jhudel\\Downloads\\New folder (3)\\Library-Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
